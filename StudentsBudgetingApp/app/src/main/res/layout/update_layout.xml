@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Update this item?"
+        android:gravity="center"
+        android:textColor="#000"
+        />
+
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="transport"
+        android:textColor="#000"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter amount"
+        android:textColor="#000"
+        android:inputType="number"
+        android:id="@+id/amount"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Notes...one or 2 words"
+        android:textColor="#000"
+        android:inputType="textCapSentences"
+        android:id="@+id/notes"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:background="#000"
+                android:layout_margin="2dp"
+                android:textStyle="bold"
+                />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+            <Button
+                android:id="@+id/btnUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:background="#000"
+                android:layout_margin="2dp"
+                android:textStyle="bold"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

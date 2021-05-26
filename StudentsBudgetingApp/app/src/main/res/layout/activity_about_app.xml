@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0000ff"
+    tools:context=".Activities.AboutAppActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#000"
+        android:id="@+id/my_Feed_Toolbar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:elevation="4dp">
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        app:cardElevation="10dp"
+        android:elevation="10dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/applogo3"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="0dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:layout_margin="10dp"
+                    android:text="This application allows Students to track their money and the spending of that money on items in their day to day life. \n\nThe app allows the users to set a budget on individual items and also the total budget for the month. \n\nUsers record in the application every time they spend their money on something, say on airtime, transport or on food. \n\nThe application in turn displays all the items that the user has spent on, the dates and the totals for all the items at the day, month and weekly levels. \n\nThe App shows flags on the expenditure based on the budget set, the flags indicating the percentage of the money spent, for all the items and also the individual items. \n\nThe app also show graphical representation of the items and the amount spent on them at daily, weekly and monthly levels, showing the user how much he has spent on every item, and the item he/she has spent on the most."/>
+
+                <Button
+                    android:id="@+id/backBtn"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="Back"
+                    android:background="#000"
+                    android:textColor="#fff"
+                    android:layout_margin="20dp"
+                    android:textAllCaps="false"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

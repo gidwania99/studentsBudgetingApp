@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.willteksoftwares.studentsbudgetingapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activities.AboutAppActivity"></activity>
+        <activity android:name=".Activities.AccountActivity" />
+        <activity android:name=".Activities.SetBudgetActivity" />
+        <activity android:name=".Activities.ForgotPasswordActivity" />
+        <activity android:name=".Activities.MonthlyAnalyticsActivity" />
+        <activity android:name=".Activities.WeeklyAnalyticsActivity" />
+        <activity android:name=".Activities.DailyAnalyticsActivity" />
+        <activity android:name=".Activities.SelectAnalyticsActivity" />
+        <activity android:name=".Activities.HistoryActivity" />
+        <activity android:name=".Activities.MonthSpendingActivity" />
+        <activity android:name=".Activities.WeekSpendingActivity" />
+        <activity android:name=".Activities.TodaySpendingActivity" />
+        <activity android:name=".Activities.RegistrationActivity" />
+        <activity android:name=".Activities.MainActivity" />
+        <activity android:name=".Activities.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
